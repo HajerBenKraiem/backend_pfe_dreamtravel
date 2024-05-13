@@ -8,10 +8,12 @@ const authRoutes = require("./routes/auth.js")
 const listingRoutes = require("./routes/listing.js")
 const bookingRoutes = require("./routes/booking.js")
 const userRoutes = require("./routes/user.js")
+const paymentRouter = require( "./routes/payment.route.js") 
 
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
+app.use('/api/payment', paymentRouter); 
 
 
 /* ROUTES */
