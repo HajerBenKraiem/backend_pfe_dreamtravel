@@ -8,7 +8,7 @@ const authRoutes = require("./routes/auth.js")
 const listingRoutes = require("./routes/listing.js")
 const bookingRoutes = require("./routes/booking.js")
 const userRoutes = require("./routes/user.js")
-const paymentRouter = require( "./routes/payment.route.js") 
+const paymentRouter = require( "./routes/paiment.route.js") 
 
 app.use(cors());
 app.use(express.json());
